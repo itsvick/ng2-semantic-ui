@@ -30,7 +30,7 @@ import { ModalConfig, ModalSize } from "../classes/modal-config";
          #modal>
 
         <!-- Configurable close icon -->
-        <i class="close icon" *ngIf="isClosable" (click)="close()" area-label="close" role="button"></i>
+        <i class="close icon" *ngIf="isClosable" (click)="close()" aria-label="close" role="button"></i>
         <!-- <ng-content> so that <sui-modal> can be used as a normal component. -->
         <ng-content></ng-content>
         <!-- @ViewChild reference so we can insert elements beside this div. -->
